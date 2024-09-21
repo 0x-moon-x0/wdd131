@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+/*color palette - https://coolors.co/d496a7-9d695a-dde8b9-37423d-fefadc*/
+
+body {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background-color: #FEFADC;
+    font-family: 'Patrick Hand', cursive;
+}
+
+header {
+    background-color: #D496A7;
+    margin-bottom: 60px;
+}
+
+h1 {
+    text-align: center;
+    color: #FEFADC
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 40px;
+    background-color: #9D695A;
+}
+
+nav a {
+    text-decoration: none;
+    padding: 25px;
+    color: #FEFADC;
+}
+
+nav a:hover {
+    color: #9D695A;
+    background-color: #FEFADC;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    column-gap: 50px;
+    margin: 10px auto;
+    max-width: 80vw;
+}
+
+.card {
+    padding: 30px;
+    overflow: auto;
+    border-radius: 15px 50px;
+    background-color: #DDE8B9;
+    box-shadow: 0px 0px 45px 20px #FEFADC inset;
+    color: #2c3330;
+}
+
+.card-header {
+    margin: 0;
+    padding: 13px;
+    text-align: center;
+    border-radius: 15px;
+    background-color: #D496A7;
+    box-shadow: 0px 0px 5px 2px #DDE8B9 inset;
+    color: #FEFADC;
+}
+
+.card-body {
+    padding: 30px;
+}
+
+#me-section {
+    display: flex;
+    height: 200px;
+}
+
+#country-section h3 {
+    text-align: center;
+    border-bottom: 1px dashed #37423D;
+    padding-bottom: 10px;
+    margin: 10px 25%;
+}
+
+#country-info {
+    display: flex;
+}
+
+#my-picture {
+    margin-left: 10px;
+    height: 100%;
+    border-radius: 10px;
+}
+
+#resource-links {
+    display: flex;
+    flex-direction: column;
+    margin-top: 90px;
+    row-gap: 20px;
+}
+
+#resource-links a {
+    padding: 10px;
+    color: #37423D;
+}
+
+#resource-links a:hover {
+    background-color: #D496A7;
+    color: #FEFADC;
+    box-shadow: 0px 0px 5px 2px #DDE8B9 inset;
+}
+
+p {
+    font-family: 'Indie Flower', cursive;
+    font-size: 20px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 60px;
+    padding: 30px;
+    background-color: #9D695A;
+    color: #FEFADC;
+}
