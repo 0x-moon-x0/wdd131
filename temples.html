@@ -10,13 +10,16 @@
     <link rel="stylesheet" href="styles/temples-large.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Patrick+Hand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <script src="scripts/temples.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
 </head>
 <body>
     <header>
         <h1>Temple Album</h1>
+        <button id="menu"></button> <!-- hamburger menu button -->
         <nav>
+            <!-- each menu selection will change the page heading on click -->
             <ul class="navbar">
                 <li><a href="#" onclick="updateHeading('Home')">Home</a></li>
                 <li><a href="#" onclick="updateHeading('Old')">Old</a></li>
@@ -27,7 +30,7 @@
         </nav>
     </header>
     <main id="main-content">
-        <h2 id="pg-heading"></h2>
+        <h2 id="pg-heading"></h2> <!-- changes on click -->
         <figure>
             <img class="temple-img" src="images/san-diego-temple.jpg" alt="Temple in San Diego, California">
             <figcaption>San Diego California</figcaption>

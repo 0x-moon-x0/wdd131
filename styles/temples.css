@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F2FDFF;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #564787;
+    color: #F2FDFF;
+}
+
+h1 {
+    text-align: left;
+    margin-left: 1rem;
+    font-size: 2rem;
+}
+
+h2 {
+    text-align: center;
+    margin: 2rem;
+    color:#564787;
+    font-size: 1.5rem;
+}
+
+nav {
+    max-width: 700px;
+    margin: 0.5rem;
+    font-size: 1.3rem;
+}
+
+/* small view */
+
+#menu {
+    font-size: 2rem;
+    border: 0;
+    background: none;
+    color: #F2FDFF;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "✕";
+}
+
+.navbar {
+    display: flex;
+    list-style: none;
+    margin: 30px;
+    flex-direction: column;
+    background-color: #564787;
+    color: #F2FDFF;
+}
+
+.navbar a {
+    display: none;
+    text-decoration: none;
+    padding: 1rem;
+    text-align: center;
+    color: #F2FDFF;
+}
+
+.navbar a:hover {
+    background-color: #DBCBD8;
+    color: black;
+    font-weight: 500;
+}
+
+.navbar a.active {
+    border: 2px solid #DBCBD8;
+    padding: 0.8rem
+}
+
+/* toggling the open class when the button is clicked */
+.open a {
+    display: block;
+}
+
+
+
+
+
+
