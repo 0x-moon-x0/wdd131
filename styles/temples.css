@@ -1,3 +1,5 @@
+/*color palette: https://coolors.co/564787-dbcbd8-f2fdff*/
+
 * {
     margin: 0;
     padding: 0;
@@ -27,6 +29,7 @@ h1 {
 
 h2 {
     text-align: center;
+    grid-column: 1 / -1;
     margin: 2rem;
     color:#564787;
     font-size: 1.5rem;
@@ -36,6 +39,23 @@ nav {
     max-width: 700px;
     margin: 0.5rem;
     font-size: 1.3rem;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin: 0.3rem auto;
+}
+
+figure {
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+img {
+    width: 100%;
+    max-width: 30rem;
 }
 
 /* small view */
@@ -82,13 +102,23 @@ nav {
 }
 
 .navbar a.active {
-    border: 2px solid #DBCBD8;
-    padding: 0.8rem
+    border: 2px inset #DBCBD8;
+    padding: 0.8rem;
+    font-weight: 500;
 }
 
 /* toggling the open class when the button is clicked */
 .open a {
     display: block;
+}
+
+footer {
+    text-align: center;
+    margin-top: 80px;
+    padding: 40px;
+    font-size: 1.3rem;
+    background-color: #564787;
+    color: #F2FDFF;
 }
 
 

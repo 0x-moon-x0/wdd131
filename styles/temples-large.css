@@ -1,4 +1,11 @@
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 768px) {
+    main {
+        grid-template-columns: 1fr 1fr;
+        max-width: 80%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
     h1 {
         font-size: 3rem;
         margin-left: 0;
@@ -22,5 +29,10 @@
     .navbar a {
         display: block;
         flex: 1 1 100%;
+    }
+
+    main {
+        grid-template-columns: 1fr 1fr 1fr;
+        margin: 0 auto;
     }
 }

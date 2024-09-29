@@ -21,3 +21,6 @@ function updateHeading(menuSelection) {
         clickedLink.classList.add('active');
     }
 }
+
+document.getElementById("currentyear").innerHTML = new Date().getFullYear();
+document.getElementById("lastModified").innerHTML = document.lastModified;
