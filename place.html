@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ukraine</title>
+    <meta name="author" content="Katherine Druchok">
+    <meta name="description" content="WDD131 - Country Webpage W03">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Ukraine</h1>
+    </header>
+    <main>
+        <div id="hero">
+            <picture>
+                <source media="(min-width: 1000px)" srcset="images/hero-large.webp">
+                <source media="(min-width: 500px)" srcset="images/hero-medium.webp">
+                <img src="images/hero-small.webp" alt="Kyiv city - the capital of Ukraine" width="500" height="333">
+            </picture>
+        </div>
+        <section id="data">
+            <h2>Data</h2>
+            <table>
+                <tbody>
+                    <tr>
+                        <th>Area:</th>
+                        <td>603,628 km²</td>
+                    </tr>
+                    <tr>
+                        <th>Population:</th>
+                        <td>38,153,599</td>
+                    </tr>
+                    <tr>
+                        <th>Capital:</th>
+                        <td>Kyiv</td>
+                    </tr>
+                    <tr>
+                        <th>Languages:</th>
+                        <td>Ukrainian, Russian</td>
+                    </tr>
+                    <tr>
+                        <th>Currency:</th>
+                        <td>Ukrainian Hryvnia</td>
+                    </tr>
+                    <tr>
+                        <th>Time Zone:</th>
+                        <td>GMT+3</td>
+                    </tr>
+                    <tr>
+                        <th>Calling Code:</th>
+                        <td>+380</td>
+                    </tr>
+                    <tr>
+                        <th>Internet TLD:</th>
+                        <td>.ua</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section id="weather">
+            <h2>Weather</h2>
+            <img src="images/rain-icon.svg" alt="cloud with rain icon">
+            <table>
+                <tbody>
+                    <tr>
+                        <th>Temperature:</th>
+                        <td>11°C</td>
+                    </tr>
+                    <tr>
+                        <th>Conditions:</th>
+                        <td>Cloudy With Showers</td>
+                    </tr>
+                    <tr>
+                        <th>Wind:</th>
+                        <td>3 km/h</td>
+                    </tr>
+                    <tr>
+                        <th>Wind Chill:</th>
+                        <td>N/A</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <footer>
+        <p>©<span id="currentyear"></span> Katherine Druchok | Canada | Alberta
+        </p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>
