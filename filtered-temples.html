@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple Album</title>
+    <meta name="author" content="Katherine Druchok">
+    <meta name="description" content="Responsive temples album webpage W04">
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <link rel="stylesheet" href="styles/filtered-temples-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="scripts/filtered-temples.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Temple Album</h1>
+        <button id="menu"></button> <!-- hamburger menu button -->
+        <nav>
+            <!-- each menu selection will change the page heading on click -->
+            <ul class="navbar">
+                <li><a href="#" id="home" onclick="updateHeading('Home')">Home</a></li>
+                <li><a href="#" id="old" onclick="updateHeading('Old')">Old</a></li>
+                <li><a href="#" id="new" onclick="updateHeading('New')">New</a></li>
+                <li><a href="#" id="large" onclick="updateHeading('Large')">Large</a></li>
+                <li><a href="#" id="small" onclick="updateHeading('Small')">Small</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2 id="pg-heading">Home</h2> <!-- changes on click -->
+        <div id="temples-grid"></div>
+    </main>
+    <footer>
+        <p>©<span id="currentyear"></span> Katherine Druchok | Canada | Alberta
+        </p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>

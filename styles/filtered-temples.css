@@ -1,0 +1,144 @@
+/*color palette: https://coolors.co/564787-dbcbd8-f2fdff*/
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-color: #564787;
+    --sub-color: #DBCBD8;
+    --sub-color-trans: #dbcbd83d;
+    --light-color: #F2FDFF;
+}
+
+body {
+    background-color: var(--light-color);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: var(--main-color);
+    color: var(--light-color);
+}
+
+h1 {
+    text-align: left;
+    margin-left: 1rem;
+    font-size: 2rem;
+}
+
+#pg-heading {
+    text-align: center;
+    grid-column: 1 / -1;
+    margin: 3rem;
+    color: var(--main-color);
+    font-size: 1.8rem;
+}
+
+nav {
+    max-width: 700px;
+    margin: 0.5rem;
+    font-size: 1.3rem;
+}
+
+#temples-grid { 
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin: 0.3rem auto;
+}
+
+.temple-card {
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 1rem;
+    border: 1px solid var(--sub-color);
+    background-color: var(--sub-color-trans);
+}
+
+.temple-card h2 {
+    color: var(--main-color);
+    font-weight: 500;
+    padding: 10px;
+}
+
+.label {
+    font-weight: 400;
+    color: var(--main-color);
+}
+
+img {
+    width: 100%;
+    max-width: 30rem;
+    margin-top: 20px;
+}
+
+/* small view */
+
+#menu {
+    font-size: 2rem;
+    border: 0;
+    background: none;
+    color: var(--light-color);
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "✕";
+}
+
+.navbar {
+    display: flex;
+    list-style: none;
+    margin: 30px;
+    flex-direction: column;
+    background-color: var(--main-color);
+    color: var(--light-color);
+}
+
+.navbar a {
+    display: none;
+    text-decoration: none;
+    padding: 1rem;
+    text-align: center;
+    color: var(--light-color);
+}
+
+.navbar a:hover {
+    background-color: var(--sub-color);
+    color: black;
+    font-weight: 500;
+}
+
+.navbar a.active {
+    border: 2px inset var(--sub-color);
+    padding: 0.8rem;
+    font-weight: 500;
+}
+
+/* toggling the open class when the button is clicked */
+.open a {
+    display: block;
+}
+
+footer {
+    text-align: center;
+    margin-top: 80px;
+    padding: 40px;
+    font-size: 1.3rem;
+    background-color: var(--main-color);
+    color: var(--light-color);
+}
