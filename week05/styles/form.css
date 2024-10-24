@@ -1,0 +1,194 @@
+/* color palette: https://coolors.co/221b1e-7a5259-e0909d-ffe7e7 */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Hind Siliguri", sans-serif;
+    font-weight: 300;
+    box-sizing: border-box;
+}
+
+:root {
+    --light-color: #FFE7E7;
+    --primary-color: #E0909D;
+    --secondary-color: #7A5259;
+    --secondary-color-darker: #5c4347;
+    --dark-color: #221B1E;
+}
+
+body {
+    background-color: #fff;
+    color: var(--dark-color);
+    font-size: 1.3rem;
+}
+
+main {
+    padding: 0 2%;
+}
+
+header {
+    padding: 1rem;
+    background-color: var(--primary-color);
+    border: 1px solid var(--secondary-color);
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+#submitted {
+    text-align: center;
+    margin: 4rem;
+    padding: 2rem;
+    border: 1px solid var(--primary-color);
+    border-radius: 10px;
+    background-color: var(--light-color);
+}
+
+h2 {
+    font-weight: 400;
+    margin-bottom: 2rem;
+    padding: .7rem;
+    border-bottom: 1px dashed var(--primary-color);
+}
+
+#counter {
+    font-size: larger;
+    font-weight: 500;
+    color: var(--secondary-color-darker);
+}
+
+#total {
+    margin-top: 15px;
+    font-style: italic;
+    font-size: smaller;
+}
+
+fieldset {
+    margin: 2rem 0;
+    padding: .5rem 2%;
+    border: 1px solid var(--primary-color);
+    border-radius: 10px;
+    background-color: var(--light-color);
+}
+
+label {
+    display: block;
+    padding-top: 1rem;
+    font-weight: 400;
+}
+
+div {
+    padding-top: 1rem;
+    font-weight: 400;
+}
+
+#applicable {
+    font-weight: 400;
+    font-style: italic;
+}
+
+.optional {
+    font-size: smaller;
+    color: var(--secondary-color-darker);
+}
+
+input[type="text"],
+input[type="date"],
+select,
+textarea {
+    display: block;
+    background-color: #fff;
+    border: 1px solid var(--secondary-color);
+    border-radius: 10px;
+    color: var(--secondary-color-darker);
+    padding: .7rem;
+    width: 100%;
+    max-width: 650px;
+}
+
+input[type="checkbox"] {
+    margin-right: 7px;
+}
+
+input[type="submit"] {
+    border: 2px solid var(--secondary-color);
+    border-radius: 10px;
+    background-color: var(--secondary-color);
+    color: var(--light-color);
+    padding: .8rem;
+    width: 96%;
+    max-width: 650px;
+    margin: -1rem 2% 2rem 2%;
+    font-size: 1rem;
+}
+
+input[type="submit"]:hover {
+    background-color: var(--primary-color);
+    color: var(--dark-color);
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: var(--secondary-color);
+}
+
+#durability,
+#easeuse,
+#performance,
+#design {
+    width: 15px;
+	height: 15px;
+}
+
+#name {
+    margin-bottom: 1%;
+}
+
+.starsRating {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: left;
+    margin: 1rem auto;
+    position: relative;
+}
+
+.starsRating input {
+    display: none;
+}
+
+.starsRating > label {
+    width: 50px;
+    transition: 0.2s ease;
+    font-size: 40px;
+    color: var(--dark-color);
+}
+
+.starsRating label:hover {
+    color: var(--secondary-color);
+    transition: 0.2s ease;
+}
+
+.starsRating label:active::before {
+    transform: scale(1.1);
+}
+
+.starsRating label::before {
+    content: '\2606';
+    position: absolute;
+    top: 0px;
+    line-height: 26px;
+}
+
+.starsRating input:checked ~
+label:before {
+    content: '\2605';
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    font-size: 1.3rem;
+    background-color: var(--primary-color);
+    color: var(--dark-color);
+    border: 1px solid var(--secondary-color);
+}
+

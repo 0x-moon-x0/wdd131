@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Hind Siliguri", sans-serif;
+    font-weight: 300;
+    box-sizing: border-box;
+}
+
+:root {
+    --light-color: #FFE7E7;
+    --primary-color: #E0909D;
+    --secondary-color: #7A5259;
+    --secondary-color-darker: #5c4347;
+    --dark-color: #221B1E;
+}
+
+html, body {
+    height: 100%;
+    background-color: #fff;
+    color: var(--dark-color);
+    font-size: 1.3rem;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+
+header {
+    padding: 1rem;
+    background-color: var(--primary-color);
+    border: 1px solid var(--secondary-color);
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+#submitted {
+    text-align: center;
+    padding: 2rem;
+    border: 1px solid var(--primary-color);
+    border-radius: 10px;
+    background-color: var(--light-color);
+}
+
+h2 {
+    font-weight: 400;
+    margin-bottom: 2rem;
+    padding: .7rem;
+    border-bottom: 1px dashed var(--primary-color);
+}
+
+#counter {
+    font-size: larger;
+    font-weight: 500;
+    color: var(--secondary-color-darker);
+}
+
+#total {
+    margin-top: 15px;
+    font-style: italic;
+    font-size: smaller;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    font-size: 1.3rem;
+    background-color: var(--primary-color);
+    color: var(--dark-color);
+    border: 1px solid var(--secondary-color);
+    margin-top: auto;
+}
