@@ -1,0 +1,115 @@
+@media screen and (min-width: 1024px) {
+
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 20px 60px;
+    }
+
+    h1 {
+        margin-left: 70px;
+    }
+    
+    #menu {
+        display: none;
+    }
+
+    .navbar {
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+    .navbar a {
+        display: block;
+        flex: 1 1 100%;
+        font-size: 1.2rem;
+        margin-right: 20px;
+    }
+
+    main {
+        max-width: 1500px;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    #what-we-make {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    #fair-img {
+        grid-column: 1 / 2;
+        grid-row: 2;
+    }
+
+    #intro {
+        grid-column: 2 / 4;
+        grid-row: 2;
+    }
+
+    #we-offer {
+        grid-column: 1 / 2;
+        grid-row: 3 / span 2;
+    }
+
+    #what-we-make .images-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+        column-gap: 1px;
+        grid-column: 2 / 4;
+        grid-row: 3;
+    }
+
+    #crochet-keychains-img,
+    #gold-bracelet-img,
+    #bead-birds-img,
+    #glasses-img {
+        width: 100%;
+        max-width: 65%; /* Slightly smaller max width to save space */
+        margin: 0 auto; /* Center images in their grid cells */
+    }
+
+    #crochet-keychains-img {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    #gold-bracelet-img {
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    #bead-birds-img {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    #glasses-img {
+        grid-column: 2;
+        grid-row: 2;
+    }
+
+    #customization {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    
+    #custom-desc {
+        grid-column: 3 / 4;
+        grid-row: 2;
+    }
+
+    #team {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    
+    figcaption {
+        text-align: center;
+    }
+    
+    #team-desc {
+        grid-column: 1 / 4;
+    }
+}
