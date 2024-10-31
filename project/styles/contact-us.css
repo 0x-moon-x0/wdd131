@@ -1,0 +1,227 @@
+:root {
+    --primary-color: #645577;
+    --primary-color-darker: #4d3f5f;
+    --secondary-color: #C9C3E9;
+    --secondary-color-darker: #9189bb;
+    --dark-color: #322A3C;
+    --light-color: #F5F5F5;
+
+    --heading-font: "Playwrite GB S", serif;
+    --paragraph-font: "Karla", serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: 400;
+}
+
+body {
+    background-color: var(--light-color);
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 30px;
+    background-color: var(--primary-color);
+    color: var(--light-color);
+}
+
+h1, h2 {
+    font-family: var(--heading-font);
+}
+
+h1 {
+    flex-grow: 1;
+    font-size: 2.3rem;
+    min-width: max-content;
+}
+
+p {
+    font-family: var(--paragraph-font);
+}
+
+#logo {
+    border: 3px solid var(--secondary-color);
+    border-radius: 3px;
+    height: 100px;
+    width: 100px;
+    height: auto;
+}
+
+#pg-heading {
+    text-align: center;
+    grid-column: 1 / -1;
+    margin: 3rem;
+    font-weight: 500;
+    font-size: 1.7rem;
+    color: var(--dark-color);
+    border-bottom: 3px solid var(--secondary-color);
+    padding-bottom: 20px;
+}
+
+main {
+    padding: 0 2%;
+}
+
+fieldset {
+    margin: 2rem 0;
+    padding: .5rem 2%;
+    border: 2px solid var(--primary-color);
+    border-radius: 6px;
+    background-color: var(--secondary-color);
+}
+
+label {
+    display: block;
+    padding-top: 1rem;
+    font-weight: 500;
+    font-family: var(--heading-font);
+}
+
+div {
+    padding-top: 1rem;
+}
+
+.optional {
+    font-size: smaller;
+    color: var(--primary-color-darker);
+    font-family: var(--paragraph-font);
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+    display: block;
+    background-color: #fff;
+    border: 1px solid var(--primary-color);
+    border-radius: 10px;
+    padding: .7rem;
+    width: 100%;
+    max-width: 650px;
+}
+
+input[type="submit"] {
+    border: 2px solid var(--primary-color);
+    border-radius: 6px;
+    background-color: var(--dark-color);
+    color: var(--secondary-color);
+    padding: .8rem;
+    width: 96%;
+    max-width: 650px;
+    margin: -1rem 2% 2rem 2%;
+    font-size: 1rem;
+    font-family: var(--paragraph-font);
+}
+
+input[type="submit"]:hover {
+    background-color: var(--secondary-color);
+    color: var(--dark-color);
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: var(--secondary-color-darker);
+    font-family: var(--paragraph-font);
+}
+
+textarea {
+    margin-bottom: 1%;
+}
+
+#menu {
+    font-size: 2rem;
+    border: none;
+    background: none;
+    color: var(--light-color);
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "✕";
+}
+
+.nav-container {
+    width: 100%;
+}
+
+.navbar {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    background-color: var(--primary-color);
+    color: var(--light-color);
+    padding-top: 15px;
+}
+
+.navbar a {
+    display: none;
+    padding: 1rem;
+    color: var(--light-color);
+    font-family: var(--paragraph-font);
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background-color: var(--secondary-color);
+    color: var(--dark-color);
+    font-weight: 500;
+}
+
+.open a {
+    display: block;
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--light-color);
+    padding: 100px;
+    font-size: 1.2rem;
+    text-align: center;
+    position: relative;
+}
+
+footer a {
+    color: var(--light-color);
+}
+
+footer a:hover {
+    font-weight: 600;
+    color: var(--dark-color);
+}
+
+#social-container {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#social {
+    display: flex;
+    gap: 10px;
+}
+
+#social img {
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+}
+
+#credit {
+    font-family: var(--paragraph-font);
+    font-size: smaller;
+    margin-top: 6px;
+}

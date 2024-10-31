@@ -1,6 +1,8 @@
 :root {
     --primary-color: #645577;
+    --primary-color-darker: #4d3f5f;
     --secondary-color: #C9C3E9;
+    --secondary-color-darker: #9189bb;
     --dark-color: #322A3C;
     --light-color: #F5F5F5;
 
@@ -15,8 +17,25 @@
     font-weight: 400;
 }
 
-body {
+html, body {
+    height: 100%;
     background-color: var(--light-color);
+    color: var(--dark-color);
+    font-size: 1.1rem;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
 }
 
 header {
@@ -38,6 +57,12 @@ h1 {
     min-width: max-content;
 }
 
+h2 {
+    margin-bottom: 2rem;
+    padding: .7rem;
+    border-bottom: 1px dashed var(--primary-color);
+}
+
 p {
     font-family: var(--paragraph-font);
 }
@@ -52,8 +77,7 @@ p {
 
 #pg-heading {
     text-align: center;
-    grid-column: 1 / -1;
-    margin: 3rem;
+    margin-bottom: 2rem;
     font-weight: 500;
     font-size: 1.7rem;
     color: var(--dark-color);
@@ -61,37 +85,24 @@ p {
     padding-bottom: 20px;
 }
 
-#products-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 1rem;
-    margin: .3rem auto;
-}
-
-.product-card {
-    font-size: 1.2rem;
+#submitted {
     text-align: center;
-    padding: 1rem;
-    margin: 2rem;
-    background-color: var(--secondary-color);
-    color: var(--dark-color);
+    padding: 2rem;
     border: 2px solid var(--primary-color);
     border-radius: 6px;
+    background-color: var(--secondary-color);
 }
 
-.product-card h2 {
+#counter {
+    font-size: larger;
     font-weight: 500;
-    padding: 10px;
+    color: var(--primary-color);
 }
 
-.label {
-    font-weight: 500;
-}
-
-img {
-    width: 100%;
-    max-width: 30rem;
-    margin-top: 20px;
+#total {
+    margin-top: 15px;
+    font-style: italic;
+    font-size: smaller;
 }
 
 #menu {
@@ -143,27 +154,6 @@ img {
     display: block;
 }
 
-label {
-    display: block;
-    padding-bottom: 5px;
-    font-family: var(--heading-font);
-}
-
-#dropdown {
-    margin-left: 100px;
-    color: var(--dark-color);
-}
-
-#sort-price {
-    font-family: var(--paragraph-font);
-    display: block;
-    border: 1px solid var(--primary-color);
-    border-radius: 4px;
-    padding: .4rem;
-    width: 100%;
-    max-width: 200px;
-}
-
 footer {
     background-color: var(--primary-color);
     color: var(--light-color);
@@ -205,5 +195,5 @@ footer a:hover {
 #credit {
     font-family: var(--paragraph-font);
     font-size: smaller;
-    margin-top: 42px;
+    margin-top: 21px;
 }

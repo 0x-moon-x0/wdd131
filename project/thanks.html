@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mary Made Stuff | Contact Us</title>
+    <title>Mary Made Stuff | Message Sent</title>
     <meta name="author" content="Katherine Druchok">
-    <meta name="description" content="A form for reaching out to us about any inquiries">
-    <link rel="stylesheet" href="styles/contact-us.css">
-    <link rel="stylesheet" href="styles/contact-us-large.css">
+    <meta name="description" content="Your message has been submitted successfully.">
+    <link rel="stylesheet" href="styles/thanks.css">
+    <link rel="stylesheet" href="styles/thanks-large.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap" rel="stylesheet">
-    <script src="scripts/contact-us.js" defer></script>
+    <script src="scripts/thanks.js" defer></script>
 </head>
 <body>
 
@@ -33,29 +33,11 @@
     <main>
         <h2 id="pg-heading">Contact Us</h2>
 
-        <form method="get" action="thanks.html">
-            <fieldset>
-                <div>
-                    <label for="name">Name *</label>
-                    <input id="name" type="text" name="name" autocomplete="name" placeholder=" Enter your name" required>
-                </div>
-                <div>
-                    <label for="email">Email *</label>
-                    <input id="email" type="email" name="email" placeholder="someone@gmail.com" required>
-                </div>
-                <label for="productSelect">Product of Inquiry <span class="optional">(Optional)</span></label>
-                    <select id="productSelect" name="product">
-                        <option value="" disabled selected>Select a Product ...</option>
-                    </select>
-                <div>
-                    <label for="message">Message <span class="optional">(Optional)</span> 
-                        <textarea id="message" name="message" rows="6" cols="70" placeholder=" Anything you want to say ..."></textarea>
-                    </label>
-                </div>
-            </fieldset>
-
-            <input type="submit" value="Send Message">
-        </form>
+        <div id="submitted">
+            <h2>Your Message Has Been Sent</h2>
+            <p>Thank you for reaching out!</p>
+            <p id="total">Total of inquiries you've submitted so far: <span id="counter"></span></p>
+        </div>
     </main>
 
     <footer>

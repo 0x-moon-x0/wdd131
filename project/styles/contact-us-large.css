@@ -1,0 +1,32 @@
+@media screen and (min-width: 1024px) {
+
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 30px 60px;
+    }
+
+    h1 {
+        margin-left: 70px;
+    }
+    
+    #menu {
+        display: none;
+    }
+
+    .navbar {
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+    .navbar a {
+        display: block;
+        flex: 1 1 100%;
+        font-size: 1.2rem;
+        margin-right: 20px;
+    }
+
+    footer {
+        padding: 50px;
+    }
+}
