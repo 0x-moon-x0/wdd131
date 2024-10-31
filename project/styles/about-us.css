@@ -12,7 +12,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-weight: 300;
+    font-weight: 400;
 }
 
 body {
@@ -49,7 +49,6 @@ p,
 figcaption {
     font-family: var(--paragraph-font);
     font-size: larger;
-    font-weight: 400;
 }
 
 #logo {

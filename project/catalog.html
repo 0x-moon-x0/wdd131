@@ -7,11 +7,58 @@
     <meta name="author" content="Katherine Druchok">
     <meta name="description" content="A catalog of items available for purchase in the Mary Made Stuff craft store">
     <link rel="stylesheet" href="styles/catalog.css">
+    <link rel="stylesheet" href="styles/catalog-large.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap" rel="stylesheet">
+    <script src="scripts/catalog.js" defer></script>
 </head>
 <body>
-    
+
+    <header>
+        <button id="menu"></button>
+        <img id="logo" src="images/logo.jpg" alt="Mary Made Stuff Logo">
+        <h1>Mary Made Stuff</h1>
+        <div class="nav-container">
+            <nav>
+                <ul class="navbar">
+                    <li><a href="about-us.html">About Us</a></li>
+                    <li><a href="catalog.html">Catalog</a></li>
+                    <li><a href="contact-us.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <h2 id="pg-heading">Catalog</h2>
+
+        <div id="dropdown">
+            <label for="sort-price">Sort by Price:</label>
+            <select id="sort-price">
+                <option value="asc">Low to High</option>
+                <option value="desc">High to Low</option>
+            </select>
+        </div>
+        <div id="products-grid"></div>
+    </main>
+
+    <footer>
+        <div id="social-container">
+            <div id="social">
+                <a href="https://www.facebook.com/MaryMadeStuff?mibextid=ZbWKwL" target="_blank">
+                    <img src="images/icons8-facebook.svg" alt="facebook">
+                </a>
+                <a href="https://www.instagram.com/marymadestuff/?igsh=czB0dzZqMXlqd2Zw&fbclid=IwZXh0bgNhZW0CMTEAAR1FZGpbApX6w56zB6Ya1GXSGOTnhwiZbyLydRsZEiOxa-tOsqzoO46q19c_aem_m57-V4PrV1wO_Em17dzC-A#" target="_blank">
+                    <img src="images/icons8-instagram.svg" alt="instagram">
+                </a>
+                <div id="credit">
+                    Icons by <a target="_blank" href="https://icons8.com">Icons8</a>
+                </div>
+            </div>
+        </div>
+        <p>©<span id="currentyear"></span> Katherine Druchok | Canada | Alberta</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
 </body>
 </html>

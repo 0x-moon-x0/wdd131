@@ -1,0 +1,44 @@
+@media screen and (min-width: 768px) {
+    #products-grid {
+        grid-template-columns: 1fr 1fr;
+        max-width: 80%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 30px 60px;
+    }
+
+    h1 {
+        margin-left: 70px;
+    }
+    
+    #menu {
+        display: none;
+    }
+
+    .navbar {
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+    .navbar a {
+        display: block;
+        flex: 1 1 100%;
+        font-size: 1.2rem;
+        margin-right: 20px;
+    }
+
+    #products-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+        margin: 0 auto;
+    }
+
+    footer {
+        padding: 50px;
+    }
+}
