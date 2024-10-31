@@ -40,16 +40,19 @@
             <img id="bead-birds-img" src="images/seed-bead-birds.jpg" alt="tiny birds out of seed beads" loading="lazy">
             <img id="gold-bracelet-img" src="images/gold-bracelet.jpg" alt="golden bracelet with pearls" loading="lazy">
             <img id="glasses-img" src="images/glasses-case.jpg" alt="jean case for glasses" loading="lazy">
-            <p>We Offer...</p>
-            <ul id="offers">
-                <li><span class="label">Jewelry:</span> Bracelets, earrings, rings, anklets, and more, all handcrafted with a variety of beads, metals, and stones.</li>
-                <li><span class="label">Toys:</span> Lovingly crafted crochet and sewn toys.</li>
-                <li><span class="label">Baby Car Seat Covers:</span> Soft, custom designs to keep little ones cozy.</li>
-                <li><span class="label">Accessories:</span> Headpieces, cosplay props, pins, hair accessories, and unique items to complete any look.</li>
-                <li><span class="label">Seed Bead Crafts:</span> Charms, intricate jewelry, and more made from seed beads.</li>
-                <li><span class="label">Clothing Repairs and Tailoring:</span> Thoughtful fixes and custom tailoring for a perfect fit.</li>
-                <li><span class="label">And More:</span> Each piece is one-of-a-kind, designed to add a bit of magic to your day.</li>
-            </ul>
+
+            <div id="we-offer">
+                <p>We Offer...</p>
+                <ul id="offers">
+                    <li><span class="label">Jewelry:</span> Bracelets, earrings, rings, anklets, and more, all handcrafted with a variety of beads, metals, and stones.</li>
+                    <li><span class="label">Toys:</span> Lovingly crafted crochet and sewn toys.</li>
+                    <li><span class="label">Baby Car Seat Covers:</span> Soft, custom designs to keep little ones cozy.</li>
+                    <li><span class="label">Accessories:</span> Headpieces, cosplay props, pins, hair accessories, and unique items to complete any look.</li>
+                    <li><span class="label">Seed Bead Crafts:</span> Charms, intricate jewelry, and more made from seed beads.</li>
+                    <li><span class="label">Clothing Repairs and Tailoring:</span> Thoughtful fixes and custom tailoring for a perfect fit.</li>
+                    <li><span class="label">And More:</span> Each piece is one-of-a-kind, designed to add a bit of magic to your day.</li>
+                </ul>
+            </div>
         </section>
 
         <section id="customization">
@@ -57,8 +60,10 @@
 
             <img id="charms-img" src="images/phone-charms.jpg" alt="a variety of unique phone charms" loading="lazy">
             <img id="cows-img" src="images/crochet-cows.jpg" alt="a variety of flower-themed crochet cow toys" loading="lazy">
-            <p>At Mary Made Stuff, we believe every item should be as unique as the person receiving it. That's why we offer customization on each of our products!</p>
-            <p>Customers can select colors, materials like beads and stones for jewelry, and fabrics. If you have a vision or a photo for inspiration, bring it along, and we'll do our best to create a piece that fits your style perfectly.</p>
+            <div id="custom-desc">
+                <p>At Mary Made Stuff, we believe every item should be as unique as the person receiving it. That's why we offer customization on each of our products!</p>
+                <p>Customers can select colors, materials like beads and stones for jewelry, and fabrics. If you have a vision or a photo for inspiration, bring it along, and we'll do our best to create a piece that fits your style perfectly.</p>
+            </div>
         </section>
 
         <section id="team">
@@ -79,26 +84,34 @@
                 <figcaption>Liudmyla - Exceptional Seamstress, Creative Visionary, THE Boss</figcaption>
             </figure>
 
-            <p>Our team's mission is to bring joy and creativity into every piece we make. At Mary Made Stuff, we're here to make your dreams come true, one handmade item at a time.</p>
-            <p>Nothing brings us more happiness than creating items that delight and inspire our customers!</p>
+            <div id="team-desc">
+                <p>Our team's mission is to bring joy and creativity into every piece we make. At Mary Made Stuff, we're here to make your dreams come true, one handmade item at a time.</p>
+                <p>Nothing brings us more happiness than creating items that delight and inspire our customers!</p>
+            </div>
+        </section>
+
+        <section id="catalog-redirect">
+            <h3>Browse Our Catalog</h3>
+            <a href="catalog.html">Take Me There!</a>
         </section>
     </main>
 
     <footer>
-        <div id="social">
-            <a href="https://www.facebook.com/MaryMadeStuff?mibextid=ZbWKwL" target="_blank">
-                <img src="images/icons8-facebook.svg" alt="facebook">
-            </a>
-            <a href="https://www.instagram.com/marymadestuff/?igsh=czB0dzZqMXlqd2Zw&fbclid=IwZXh0bgNhZW0CMTEAAR1FZGpbApX6w56zB6Ya1GXSGOTnhwiZbyLydRsZEiOxa-tOsqzoO46q19c_aem_m57-V4PrV1wO_Em17dzC-A#" target="_blank">
-                <img src="images/icons8-instagram.svg" alt="instagram">
-            </a>
+        <div id="social-container">
+            <div id="social">
+                <a href="https://www.facebook.com/MaryMadeStuff?mibextid=ZbWKwL" target="_blank">
+                    <img src="images/icons8-facebook.svg" alt="facebook">
+                </a>
+                <a href="https://www.instagram.com/marymadestuff/?igsh=czB0dzZqMXlqd2Zw&fbclid=IwZXh0bgNhZW0CMTEAAR1FZGpbApX6w56zB6Ya1GXSGOTnhwiZbyLydRsZEiOxa-tOsqzoO46q19c_aem_m57-V4PrV1wO_Em17dzC-A#" target="_blank">
+                    <img src="images/icons8-instagram.svg" alt="instagram">
+                </a>
+                <div id="credit">
+                    Icons by <a target="_blank" href="https://icons8.com">Icons8</a>
+                </div>
+            </div>
         </div>
-        <p>©<span id="currentyear"></span> Katherine Druchok | Canada | Alberta
-        </p>
+        <p>©<span id="currentyear"></span> Katherine Druchok | Canada | Alberta</p>
         <p>Last Modified: <span id="lastModified"></span></p>
-        <div id="credit">
-            Icons by <a target="_blank" href="https://icons8.com">Icons8</a>
-        </div>
     </footer>
 
 </body>
