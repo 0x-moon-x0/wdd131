@@ -3,7 +3,7 @@
     header {
         flex-direction: row;
         justify-content: space-between;
-        padding: 20px 60px;
+        padding: 30px 60px;
     }
 
     h1 {
@@ -111,5 +111,9 @@
     
     #team-desc {
         grid-column: 1 / 4;
+    }
+
+    footer {
+        padding: 50px;
     }
 }

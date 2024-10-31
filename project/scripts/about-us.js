@@ -6,9 +6,5 @@ hamButton.addEventListener('click', () => {
     hamButton.classList.toggle('open');
 });
 
-function updateHeading(menuSelection) {
-    document.getElementById('pg-heading').textContent = menuSelection;
-}
-
 document.getElementById("currentyear").innerHTML = new Date().getFullYear();
 document.getElementById("lastModified").innerHTML = document.lastModified;
